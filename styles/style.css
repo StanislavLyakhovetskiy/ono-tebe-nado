@@ -27,18 +27,15 @@
 .header__links-list-item {
     display: grid;
     grid-template-columns: 67px 149px 108px;
-    column-gap: 25px;
+    column-gap: 32px; /* увеличил на 7px, подгоняя в PixelPerfect под экран 1440 */
+    padding-left: 1px; /* добавил, подгоняя в PixelPerfect под экран 1440 */
+    padding-bottom: 1px; /* добавил, подгоняя в PixelPerfect под экран 1440 */
     list-style: circle;
 }
 
 /* класс, чтобы сделать ссылку без кружочка перед ней */
 .header__links-list-item_no-bullit {
     list-style: none;
-}
-
-/* ссылка */
-.header__link {
-
 }
 
 /* активная ссылка* */
@@ -58,11 +55,6 @@
   height: 105px;
 }
 
-/* контейнер с адресом */
-.address {
-
-}
-
 /* выравнивание блока с адресом */
 .header__address {
   justify-self: flex-end;
@@ -74,6 +66,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 135%;
+  width: 240px;
 }
 
 /* второй блок сайта */
@@ -82,9 +75,10 @@
 .cover {
   background-image: url(../images/cover.jpg);
   background-size: cover;
+  background-position: center;
   position: relative;
   margin-top: 92px;
-  z-index: -1;
+  z-index: 0;
 }
 
 /* полупрозрачный блок поверх секции */
@@ -151,13 +145,14 @@
 
 /* текст подзаголовка */
 .cover__description-text {
-  word-spacing: 15px;
+  word-spacing: 17px; /* увеличил на 2px, подгоняя в PixelPerfect под экран 1440 */
   color: #fff;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
   align-self: center;
+  line-height: 28px;
 }
 
 /* кнопка «Сделать ставку» */
@@ -173,9 +168,9 @@
   border: 1px solid #fff;
   background-color: transparent;
   padding-top: 12px;
-  padding-right: 32px;
+  padding-right: 32px; /* уменьшил на 4px, подгоняя в PixelPerfect под экран 1440 */
   padding-bottom: 12px;
-  padding-left: 32px;
+  padding-left: 32px; /* уменьшил на 4px, подгоняя в PixelPerfect под экран 1440 */
   cursor: pointer;
 }
 
@@ -205,11 +200,6 @@
   gap: 25px;
 }
 
-/* пункт списка карточки */
-.lots__card-list-item {
-
-}
-
 /* ссылка, обрамляющая карточку */
 .card-link {
   text-decoration: none;
@@ -229,7 +219,7 @@
   background-image: url(../images/card-lot-01.jpg);
   min-height: 450px;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .card_type_book {
@@ -237,7 +227,7 @@
   background-image: url(../images/card-lot-02.jpg);
   min-height: 450px;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .card_type_picture {
@@ -245,7 +235,7 @@
   background-image: url(../images/card-lot-03.jpg);
   min-height: 450px;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 /* заголовок карточки */
@@ -354,7 +344,7 @@
   margin-left: 50px;
   margin-bottom: 90px;
   margin-right: 50px;
-  margin-top: 180px;
+  margin-top: 186px; /* увеличил на 6px, подгоняя в PixelPerfect под экран 1440 */
   gap: 356px;
 }
 
@@ -367,6 +357,7 @@
   line-height: 135%;
   display: flex;
   flex-direction: column;
+  width: 240px;
 }
 
 .footer__menu {
@@ -378,19 +369,9 @@
   line-height: normal;
 }
 
-/* список пунктов меню */
-.footer__menu-list {
-
-}
-
 /* пункт списка меню */
 .footer__menu-list-item {
   list-style: none;
-}
-
-/* ссылка меню */
-.footer__menu-link {
-
 }
 
 /* активная ссылка меню (без подчеркивания) */
@@ -398,30 +379,10 @@
   text-decoration: none;
 }
 
-/* список ссылок на социальные сети */
-.footer__social {
-
-}
-
 .footer__social-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 48px;
-}
-
-/* пункт списка ссылок на социальные сети */
-.footer__social-list-item {
-
-}
-
-/* ссылка на социальные сети */
-.footer__social-link {
-
-}
-
-/* иконка социальной сети */
-.footer__social-icon {
-
 }
 
 /* конец стилей для сайта */
