@@ -25,11 +25,12 @@
 
 /* пункт списка ссылок */
 .header__links-list-item {
-    display: grid;
-    grid-template-columns: 67px 149px 108px;
+    display: flex;
+    /*display: grid; /* убрал по итогам совета от ревьюера */
+    /*grid-template-columns: 67px 149px 108px; /* убрал по итогам совета от ревьюера */
     column-gap: 32px; /* увеличил на 7px, подгоняя в PixelPerfect под экран 1440 */
-    padding-left: 1px; /* добавил, подгоняя в PixelPerfect под экран 1440 */
-    padding-bottom: 1px; /* добавил, подгоняя в PixelPerfect под экран 1440 */
+    /*padding-left: 4px; /* оставил, подгоняя в PixelPerfect под экран 1440 */
+    /*padding-bottom: 1px; добавил, подгоняя в PixelPerfect под экран 1440 */
     list-style: circle;
 }
 
